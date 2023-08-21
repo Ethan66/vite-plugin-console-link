@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "pnpm -F vue-test dev",
-    "build": "pnpm -F vite-plugin-console-link build"
+    "build": "pnpm -F vite-plugin-console-link build",
+    "pub": "pnpm -F vite-plugin-console-link pub"
   },
   "keywords": [],
   "author": "",
