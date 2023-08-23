@@ -9,7 +9,7 @@ A library of supports console function link.
 
 ### 解决方案：
 
-在某个文件或者某个目录的所有文件下的每个函数头部自动添加console.log，加上打印值，第一个为打印函数的名称，参照vue-devtool的样式，显得醒目。从第二个值开始是参数，对象会转为JSON对象
+每个函数头部自动添加console.log，加上打印值，第一个为打印函数的名称，参照vue-devtool的样式，显得醒目。从第二个值开始是参数，对象会转为JSON对象
 
 #### 使用说明
 

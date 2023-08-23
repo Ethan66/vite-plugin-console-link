@@ -10,6 +10,7 @@ import {
 const isShouldConsole = (fnContext: string) => {
   const match = fnContext.match(/\S+/)
   if (match) {
+    if (match[0].startsWith('}')) return false
     if (match[0].startsWith("console.log('%c")) {
       // 打印过的不需要再打印
       return false
@@ -173,6 +174,7 @@ export const getSpliceCode = (code: string, result = ''): string => {
   const firstIndex = 0
   let spliceCode = ''
   const initCode = code
+
   code.replace(
     /([^\n;]+)\s*\(([^()]*?)(?=\)|=>)\)?\s*(?:=>)?\s*(\{\s*[\s\S]+?\})/,
     (codeStr, prefix, arg, fnContext, index) => {

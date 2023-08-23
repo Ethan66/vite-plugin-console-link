@@ -2,6 +2,16 @@
 import { RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import router from '@/router'
+
+type Config = {
+  name: string
+  click: (row1: unknown, row: object, e?: any) => {}
+  code?: string
+  disabled?: boolean
+  show?: boolean
+  type?: any
+}[]
+
 const goRouter = (path) => {
   router.push(path)
 }

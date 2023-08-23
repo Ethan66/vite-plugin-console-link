@@ -3,7 +3,7 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
-import consoleLink from '../console-link/dist/module.cjs'
+import consoleLink from '../console-link/src/index'
 
 // https://vitejs.dev/config/
 export default defineConfig({
